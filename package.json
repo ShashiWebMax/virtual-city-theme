@@ -1,0 +1,24 @@
+{
+  "name": "nittambuwa",
+  "version": "1.0.0",
+  "description": "<!-- horizontal line -->\r ---",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./resources/css/main.css -o ./tailwind.css --watch",
+    "build": "npx tailwindcss -i ./resources/css/main.css -o ./tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShashiWebMax/nittambuwa_theme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShashiWebMax/nittambuwa_theme/issues"
+  },
+  "homepage": "https://github.com/ShashiWebMax/nittambuwa_theme#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}

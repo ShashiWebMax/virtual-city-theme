@@ -1,0 +1,141 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Staatliches";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./resources/fonts/staatliches-v11-latin-regular.eot"); /* IE9 Compat Modes */
+  src: url("./resources/fonts/staatliches-v11-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./resources/fonts/staatliches-v11-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("./resources/fonts/staatliches-v11-latin-regular.woff") format("woff"),
+    /* Modern Browsers */
+      url("./resources/fonts/staatliches-v11-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("./resources/fonts/staatliches-v11-latin-regular.svg#Staatliches")
+      format("svg"); /* Legacy iOS */
+}
+
+html {
+  scroll-behavior: smooth;
+  color: #141b24;
+}
+
+.title {
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+h2{
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+h3{
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.content .page .content a{
+  font-weight: bold;
+  color: #00428d;
+}
+
+#hero-container {
+  background-image: url("./resources/images/tile_background.png");
+  background-color: #09274a;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* grayscale */
+}
+.mask-left {
+  clip-path: polygon(100% 0%, 100% 100%, 10% 100%, 0% 50%, 10% 0);
+}
+/* md:mask-left */
+
+/* on xs screens  */
+@media (max-width: 640px) {
+  .title {
+    font-size: 1.2rem;
+  }
+}
+
+/* Comment section styles */
+.comment-navigation a {
+  background-color: rgb(196, 196, 196);
+  padding: 3px 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.comment-metadata {
+  font-family: monospace;
+}
+.comment-list li {
+  border-bottom: 1px solid #ccc;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.comment-reply-link {
+  font-family: monospace;
+  font-weight: bold;
+  background-color: rgb(196, 196, 196);
+  padding: 3px 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 10px;
+}
+
+.comment-respond h3 {
+  font-weight: bold;
+}
+
+.comment-respond {
+  background-color: #e2e2e2;
+  padding: 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+.comment-respond label{
+  display: block;
+}
+.comment-respond input, .comment-respond textarea{
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.comment-respond textarea{
+  height: 60px;
+}
+.comment-form-cookies-consent {
+  /* display: flex; */
+}
+.comment-form-cookies-consent input, .comment-form-cookies-consent label{
+  display: inline;
+  width: auto;
+}
+.comment-respond input[type="submit"] {
+  background-color: #85b3e7;
+}
+
