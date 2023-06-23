@@ -1,0 +1,47 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/business-block",
+  "version": "0.1.0",
+  "title": "Business Block",
+  "category": "design",
+  "icon": "businessperson",
+  "description": "Business information block.",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "businessName": {
+      "type": "string",
+      "default": ""
+    },
+    "businessDescription": {
+      "type": "string",
+      "default": ""
+    },
+    "businessAddress": {
+      "type": "string",
+      "default": ""
+    },
+    "businessPhone": {
+      "type": "string",
+      "default": ""
+    },
+    "businessEmail": {
+      "type": "string",
+      "default": ""
+    },
+    "businessWebsite": {
+      "type": "string",
+      "default": ""
+    },
+    "businessHours": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "textdomain": "business-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

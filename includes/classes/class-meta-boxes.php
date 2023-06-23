@@ -34,8 +34,7 @@ class Meta_Boxes{
             'show_title_meta',                  //Unique ID
             __('Show Title', 'nittambuwa'),      //Box title
             [$this, 'show_title_meta_box'],     //Content callback, must be of type callable
-            'page',                             //Post type
-            'side',                             //Context
+            
         );
 
     }

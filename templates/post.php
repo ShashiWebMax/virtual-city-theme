@@ -15,9 +15,15 @@ $featured_image = get_the_post_thumbnail_url();
         <div class=" h-24 bg-gradient-to-tr from-white to-indigo-800"></div>
     <?php endif; ?>
     <div class=" -mt-14">
+        <?php
+        // if meta show title is checked
+        if(get_post_meta(get_the_ID(), '_show_title_meta', true) != 'no'){
+            
+        ?>
         <h2 class=" text-3xl font-bold p-4 pt-12  bg-gradient-to-t from-white via-white to-transparent pb-1 ">
             <?php the_title(); ?>
         </h2>
+        <?php } ?>
         <hr class="">
         <div class=" bg-white p-4">
             <?php the_content(); ?>

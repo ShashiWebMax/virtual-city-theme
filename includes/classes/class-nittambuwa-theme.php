@@ -113,6 +113,8 @@ class NITTAMBUWA_THEME
     public function register_widgets(){
         register_widget('Nittambuwa\Includes\Classes\Animation_Widget');
         register_widget('Nittambuwa\Includes\Classes\Swmax_Widget');
+        //register blocks
+        register_block_type(dirname(__FILE__, 3) . '/src/business-block/build/block.json');
     }
 
     /**
